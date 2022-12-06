@@ -4,3 +4,11 @@
 782 -> 8
 918 -> 1 */
 
+Console.WriteLine("Введите трёхзначное число: ");
+int threeNum = Convert.ToInt32(Console.ReadLine());
+string threeNumString = Convert.ToString(threeNum);
+if (threeNumString.Length == 3){
+Console.WriteLine("Вторая цифра этого числа " + threeNumString[1]);
+} else {
+    Console.WriteLine("Вы ввели не трёхзначное число");
+}
