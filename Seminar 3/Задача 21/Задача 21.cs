@@ -21,7 +21,7 @@ int by = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите координаты точки B по оси Z: ");
 int bz = Convert.ToInt32(Console.ReadLine());
 
-var result = Math.Sqrt(Math.Pow((bx - ax), 2) + Math.Pow((by - ay), 2) + Math.Pow((bz - az), 2));
+var result = Math.Sqrt(Math.Pow((ax - bx), 2) + Math.Pow((ay - by), 2) + Math.Pow((az - bz), 2));
 Console.WriteLine(result);
 }
 
