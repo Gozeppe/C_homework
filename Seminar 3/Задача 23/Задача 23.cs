@@ -5,12 +5,14 @@
 */
 
 
-Console.WriteLine("Введите число: ");
-int N = Convert.ToInt32(Console.ReadLine());
-
-for( )
+Console.WriteLine("Введи число:");
+int num = int.Parse(Console.ReadLine()!);
+if (num < 0)
 {
-    while( ){
-        
-    }
+    Console.WriteLine("Число отрицательно преобразовано в положительное");
+    num = -num;
 }
+for (int i = 1; i <= num; i++)
+    {
+        Console.Write($"{Math.Pow(i, 3)} ");
+    } 
