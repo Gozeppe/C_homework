@@ -6,13 +6,23 @@
 */
 try
 {
-    Console.WriteLine("Введите число A: ");
-    int A = Convert.ToInt32(Console.ReadLine());
-    Console.WriteLine("Введите число B: ");
-    int B = Convert.ToInt32(Console.ReadLine());
-    Console.WriteLine(Math.Pow(A, B));
+Console.WriteLine ("Введите A: ");
+int a = Convert.ToInt32 (Console.ReadLine ()); 
+
+
+Console.WriteLine ("Введите B: ");
+int b = Convert.ToInt32 (Console.ReadLine ());
+
+int ToDegree = a;
+
+for (int i = 1; i < b; i ++) 
+{
+  ToDegree = ToDegree*a;
 }
-catch
+ Console.WriteLine($"Число {a} в степени {b} равно {ToDegree}");
+}
+catch 
 {
     Console.WriteLine("Вы ввели не число, введите число");
 }
+ 
