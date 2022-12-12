@@ -11,12 +11,12 @@
 try{
 Console.WriteLine("Введите число: ");
 int num = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine($"Сумма цифр числа {num} равна: {SummaN(num)}");
+Console.WriteLine($"Сумма цифр числа {num} равна: {NumberSum(num)}");
 }
 catch{
     Console.WriteLine("Вы ввели не число, введите число");
 }
-int SummaN(int num)              
+int NumberSum(int num)              
 {
 int sum = 0;
      while (num > 0)
