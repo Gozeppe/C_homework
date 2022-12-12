@@ -7,12 +7,12 @@
 
 try 
 {
-    Console.WriteLine("Введите массив из 8 чисел: ");
+    Console.WriteLine("Введите массив из 8 чисел;");
     EnterArray();
 }
 catch
 {
-  Console.WriteLine("Ошибка: Надо было вводить массив цифрами!");
+  Console.WriteLine("Введите, пожалуйста, цифры в столбик");
 }
 void EnterArray()
 {
