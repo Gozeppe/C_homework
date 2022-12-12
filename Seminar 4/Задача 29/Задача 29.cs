@@ -8,13 +8,13 @@
 try 
 {
     Console.WriteLine("Введите массив из 8 чисел;");
-    EnterArray();
+    NewArray();
 }
 catch
 {
   Console.WriteLine("Введите, пожалуйста, цифры в столбик");
 }
-void EnterArray()
+void NewArray()
 {
     int[] array = new int[8];
     for (int i = 0; i < array.Length; i++)
