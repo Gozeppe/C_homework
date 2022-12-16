@@ -19,7 +19,7 @@ void Polycheck(int poly){
 if (99999 > poly && poly > 9999 )
 {
     while (temp > 0){
-        result *= 10;
+        result *= 10; 
         result += temp % 10;
         temp /= 10;
     }

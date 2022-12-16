@@ -10,11 +10,14 @@ a = -9 b = -3 -> max = -3
 
 Console.WriteLine("Введите первое число: ");
 int NumberA = Convert.ToInt32(Console.ReadLine());
+
 Console.WriteLine("Введите второе число: ");
 int NumberB = Convert.ToInt32(Console.ReadLine());
 
-if (NumberA < NumberB){
+if (NumberA < NumberB)
+{
     Console.WriteLine("Max = " + NumberB);
-} else{
+} else
+{
 Console.WriteLine("Max = " + NumberA);
 }
