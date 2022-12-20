@@ -12,26 +12,26 @@ m = 3, n = 4.
 
 void PrintArray(int[,] matr)
 {
- for (int i = 0; i < matr.GetLength(0); i++)
+ for (int m = 0; m < matr.GetLength(0); m++)
  {
- for (int j = 0; j < matr.GetLength(1); j++)
+ for (int n = 0; n < matr.GetLength(1); n++)
  {
- Console.Write($"{matr[i, j]} ");
+ Console.Write($"{matr[m, n]} ");
  }
  Console.WriteLine();
  }
 }
 void FillArray(int[,] matr)
 {
- for (int i = 0; i < matr.GetLength(0); i++)
+ for (int m = 0; m < matr.GetLength(0); m++)
  {
- for (int j = 0; j < matr.GetLength(1); j++)
+ for (int n = 0; n < matr.GetLength(1); n++)
  {
- matr[i,j] = new Random().Next(1,10);//[1; 10)
+ matr[m,n] = new Random().Next(1,10);//[1; 10)
  }
  }
 }
-int[,] matrix = new int[3, 4];
+int[,] matrix = new int[5, 5];
 FillArray(matrix);
 Console.WriteLine();
 PrintArray(matrix);

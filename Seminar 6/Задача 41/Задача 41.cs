@@ -34,5 +34,5 @@ int MoreThanZero(int[] ManyNumbers)
 
 InputNumbers(m);
 
-Console.WriteLine($"Введено чисел больше 0: {MoreThanZero(ManyNumbers)} ");
+Console.WriteLine($"Введено чисел: {m} больше 0: {MoreThanZero(ManyNumbers)} ");
 
