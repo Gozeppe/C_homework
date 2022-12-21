@@ -27,6 +27,6 @@ for (int j = 0; j < arr.GetLength(1); j++)
     {
         sum += arr[i, j];
     }
+    Console.WriteLine();
     Console.Write($"{ sum / arr.GetLength(0)} ");
 }
-Console.ReadLine();
