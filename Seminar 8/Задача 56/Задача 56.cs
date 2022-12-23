@@ -18,6 +18,8 @@ int rows = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("введите количество столбцов: ");
 int columns = Convert.ToInt32(Console.ReadLine());
 int[,] matr = new int[rows, columns];
+int sumMin = Int32.MaxValue;
+int indexLine = 0;
 
 void PrintArray(int[,] array)
 {
@@ -30,7 +32,7 @@ void PrintArray(int[,] array)
         Console.WriteLine("");
     }
 }
-void FillArrayRandomNumbers(int[,] array)
+void FillArrayRandomMatr(int[,] array)
 {
     for (int i = 0; i < array.GetLength(0); i++)
     {
@@ -43,6 +45,21 @@ void FillArrayRandomNumbers(int[,] array)
 Console.WriteLine();
 
 
-FillArrayRandomNumbers(matr);
+FillArrayRandomMatr(matr);
 PrintArray(matr);
 
+for (int i = 0; i < matr.GetLength(0); i++)
+{
+    int sum = 0;
+    for (int j = 0; j < matr.GetLength(1); j++)
+    {
+        sum = sum + matr[i, j];        
+    }
+    if (sum < sumMin)
+    {
+        sumMin = sum;
+        indexLine++;
+    }
+}
+
+Console.WriteLine("строка с наименьшей суммой елементов под номером: " + (indexLine) + ", с суммой елементов равной: " + (sumMin));
