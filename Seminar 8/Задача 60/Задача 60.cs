@@ -6,18 +6,18 @@
 26(1,0,1) 55(1,1,1)
 */
 
-int deep1 = InputInt("Введите размерность 1: ");
-int deep2 = InputInt("Введите размерность 2: ");
-int deep3 = InputInt("Введите размерность 3: ");
+int TriMas = InputInt("Введите размерность 1: ");
+int TriMas2 = InputInt("Введите размерность 2: ");
+int TriMas3 = InputInt("Введите размерность 3: ");
 int countNums = 89;
 
-if (deep1 * deep2 * deep3 > countNums)
+if (TriMas * TriMas2 * TriMas3 > countNums)
 {
     Console.Write("Массив слишком большой");
     return;
 }
 
-int[,,] resultNums = Create3DMassive(deep1, deep2, deep3);
+int[,,] resultNums = Create3DMassive(TriMas, TriMas2, TriMas3);
 
 for (int i = 0; i < resultNums.GetLength(0); i++)
 {
